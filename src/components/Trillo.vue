@@ -1,11 +1,26 @@
 <template>
   <div class="main-trillo">
-    <h1>hello trillo <i class="fab fa-vuejs"></i></h1>
+    <div class="container">
+      <Header />
+      <div class="content">
+        <sidebar />
+        <hotel-view />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Header from "@/components/Header.vue";
+import Sidebar from "@/components/Sidebar.vue";
+import HotelView from "@/components/HotelView.vue";
+export default {
+  components: {
+    Header,
+    Sidebar,
+    HotelView
+  }
+};
 </script>
 
 <style></style>
