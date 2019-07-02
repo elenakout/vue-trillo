@@ -1,7 +1,7 @@
 <template>
   <nav class="sidebar">
     <ul class="side-nav">
-      <li class="side-nav__item">
+      <li class="side-nav__item side-nav__item--active">
         <a href="#" class="side-nav__link">
           <svg class="side-nav__icon">
             <use xlink:href="../assets/img/sprite.svg#icon-home"></use>
@@ -10,7 +10,7 @@
         </a>
       </li>
 
-      <li>
+      <li class="side-nav__item">
         <a href="#" class="side-nav__link">
           <svg class="side-nav__icon">
             <use
@@ -21,7 +21,7 @@
         </a>
       </li>
 
-      <li>
+      <li class="side-nav__item">
         <a href="#" class="side-nav__link">
           <svg class="side-nav__icon">
             <use xlink:href="../assets/img/sprite.svg#icon-key"></use>
@@ -30,7 +30,7 @@
         </a>
       </li>
 
-      <li>
+      <li class="side-nav__item">
         <a href="#" class="side-nav__link">
           <svg class="side-nav__icon">
             <use xlink:href="../assets/img/sprite.svg#icon-map"></use>
