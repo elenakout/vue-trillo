@@ -11,39 +11,39 @@
         possimus saepe! Vel blanditiis debitis laborum.
       </p>
       <ul class="list">
-        <li class="list_item">Close to the beach</li>
-        <li class="list_item">Breakfast included</li>
-        <li class="list_item">Free airport shuttle</li>
-        <li class="list_item">Free wifi in all rooms</li>
-        <li class="list_item">Air condition and heating</li>
-        <li class="list_item">Pets allowed</li>
-        <li class="list_item">We speak all languages</li>
-        <li class="list_item">Perfect for families</li>
+        <li class="list__item">Close to the beach</li>
+        <li class="list__item">Breakfast included</li>
+        <li class="list__item">Free airport shuttle</li>
+        <li class="list__item">Free wifi in all rooms</li>
+        <li class="list__item">Air condition and heating</li>
+        <li class="list__item">Pets allowed</li>
+        <li class="list__item">We speak all languages</li>
+        <li class="list__item">Perfect for families</li>
       </ul>
-      <div class="recomment">
-        <p class="recommend_count">
-          Lucy and 3 other friends recommentthis hotel.
+      <div class="recommend">
+        <p class="recommend__count">
+          Lucy and 3 other friends recommend this hotel.
         </p>
-        <div class="recommend_friends">
+        <div class="recommend__friends">
           <img
             src="../assets/img/user-3.jpg"
             alt="Friend 1"
-            class="recommend_photo"
+            class="recommend__photo"
           />
           <img
             src="../assets/img/user-4.jpg"
             alt="Friend 2"
-            class="recommend_photo"
+            class="recommend__photo"
           />
           <img
             src="../assets/img/user-5.jpg"
             alt="Friend 3"
-            class="recommend_photo"
+            class="recommend__photo"
           />
           <img
             src="../assets/img/user-6.jpg"
             alt="Friend 4"
-            class="recommend_photo"
+            class="recommend__photo"
           />
         </div>
       </div>
@@ -78,5 +78,33 @@ export default {};
 .user-reviews {
   background-color: yellowgreen;
   flex: 1;
+}
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__friends {
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    border: solid 0.3rem #fff;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
 }
 </style>
